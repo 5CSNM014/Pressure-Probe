@@ -1,0 +1,62 @@
+Terminator = "\r\n";
+ReplyTimeout = 500;
+ReadTimeout = 500;
+
+# --- 初期読み出し（ピンごとに R? を送る） ---
+
+readP2 {
+    out "R?";
+    in  "IN P2=%d";
+    ExtraInput = Ignore;
+}
+
+readP3 {
+    out "R?";
+    in  "IN P2=%*d P3=%d";
+    ExtraInput = Ignore;
+}
+
+readP4 {
+    out "R?";
+    in  "IN P2=%*d P3=%*d P4=%d";
+    ExtraInput = Ignore;
+}
+
+readP5 {
+    out "R?";
+    in  "IN P2=%*d P3=%*d P4=%*d P5=%d";
+    ExtraInput = Ignore;
+}
+
+readP7 {
+    out "R?";
+    in  "IN P2=%*d P3=%*d P4=%*d P5=%*d P7=%d";
+    ExtraInput = Ignore;
+}
+
+readP8 {
+    out "R?";
+    in  "IN P2=%*d P3=%*d P4=%*d P5=%*d P7=%*d P8=%d";
+    ExtraInput = Ignore;
+}
+
+readP9 {
+    out "R?";
+    in  "IN P2=%*d P3=%*d P4=%*d P5=%*d P7=%*d P8=%*d P9=%d";
+    ExtraInput = Ignore;
+}
+
+# 入力イベント (push型)
+chgInput2 { in "EVT P2=%d"; ExtraInput = Ignore; }
+chgInput3 { in "EVT P3=%d"; ExtraInput = Ignore; }
+chgInput4 { in "EVT P4=%d"; ExtraInput = Ignore; }
+chgInput5 { in "EVT P5=%d"; ExtraInput = Ignore; }
+chgInput7 { in "EVT P7=%d"; ExtraInput = Ignore; }
+chgInput8 { in "EVT P8=%d"; ExtraInput = Ignore; }
+chgInput9 { in "EVT P9=%d"; ExtraInput = Ignore; }
+
+# 出力パルス
+pulseP10 { out "P10 %d"; in "OK P10=PULSE"; }
+pulseP11 { out "P11 %d"; in "OK P11=PULSE"; }
+pulseP12 { out "P12 %d"; in "OK P12=PULSE"; }
+pulseP13 { out "P13 %d"; in "OK P13=PULSE"; }
