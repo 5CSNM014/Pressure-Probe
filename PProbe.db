@@ -1,0 +1,242 @@
+# --- 起動時に各ピン初期値を読む longin --- 
+
+record(longin, "In2Init") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto readP2 L0")
+    field(PINI, "YES")
+}
+
+record(longin, "In2Evt") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto chgInput2 L0")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout, "In2State") {
+    field(DTYP, "Soft Channel")
+}
+
+record(calcout, "In2Init2State") {
+    field(INPA, "In2Init CP")
+    field(CALC, "A")
+    field(OUT,  "In2State PP")
+}
+ 
+record(calcout, "In2Evt2State") {
+    field(INPA, "In2Evt CP")
+    field(CALC, "A")
+    field(OUT,  "In2State PP")
+}
+
+record(longin, "In3Init") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto readP3 L0")
+    field(PINI, "YES")
+}
+
+record(longin, "In3Evt") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto chgInput3 L0")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout, "In3State") {
+    field(DTYP, "Soft Channel")
+}
+
+record(calcout, "In3Init3State") {
+    field(INPA, "In3Init CP")
+    field(CALC, "A")
+    field(OUT,  "In3State PP")
+}
+ 
+record(calcout, "In3Evt3State") {
+    field(INPA, "In3Evt CP")
+    field(CALC, "A")
+    field(OUT,  "In3State PP")
+}
+
+record(longin, "In4Init") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto readP4 L0")
+    field(PINI, "YES")
+}
+
+record(longin, "In4Evt") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto chgInput4 L0")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout, "In4State") {
+    field(DTYP, "Soft Channel")
+}
+
+record(calcout, "In4Init4State") {
+    field(INPA, "In4Init CP")
+    field(CALC, "A")
+    field(OUT,  "In4State PP")
+}
+ 
+record(calcout, "In4Evt4State") {
+    field(INPA, "In4Evt CP")
+    field(CALC, "A")
+    field(OUT,  "In4State PP")
+}
+
+record(longin, "In5Init") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto readP5 L0")
+    field(PINI, "YES")
+}
+
+record(longin, "In5Evt") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto chgInput5 L0")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout, "In5State") {
+    field(DTYP, "Soft Channel")
+}
+
+record(calcout, "In5Init5State") {
+    field(INPA, "In5Init CP")
+    field(CALC, "A")
+    field(OUT,  "In5State PP")
+}
+ 
+record(calcout, "In5Evt5State") {
+    field(INPA, "In5Evt CP")
+    field(CALC, "A")
+    field(OUT,  "In5State PP")
+}
+
+record(longin, "In7Init") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto readP7 L0")
+    field(PINI, "YES")
+}
+
+record(longin, "In7Evt") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto chgInput7 L0")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout, "In7State") {
+    field(DTYP, "Soft Channel")
+}
+
+record(calcout, "In7Init7State") {
+    field(INPA, "In7Init CP")
+    field(CALC, "A")
+    field(OUT,  "In7State PP")
+}
+ 
+record(calcout, "In7Evt7State") {
+    field(INPA, "In7Evt CP")
+    field(CALC, "A")
+    field(OUT,  "In7State PP")
+}
+
+record(longin, "In8Init") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto readP8 L0")
+    field(PINI, "YES")
+}
+
+record(longin, "In8Evt") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto chgInput8 L0")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout, "In8State") {
+    field(DTYP, "Soft Channel")
+}
+
+record(calcout, "In8Init8State") {
+    field(INPA, "In8Init CP")
+    field(CALC, "A")
+    field(OUT,  "In8State PP")
+}
+ 
+record(calcout, "In8Evt8State") {
+    field(INPA, "In8Evt CP")
+    field(CALC, "A")
+    field(OUT,  "In8State PP")
+}
+
+record(longin, "In9Init") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto readP9 L0")
+    field(PINI, "YES")
+}
+
+record(longin, "In9Evt") {
+    field(DTYP, "stream")
+    field(INP,  "@PProbe.proto chgInput9 L0")
+    field(SCAN, "I/O Intr")
+}
+
+record(longout, "In9State") {
+    field(DTYP, "Soft Channel")
+}
+
+record(calcout, "In9Init9State") {
+    field(INPA, "In9Init CP")
+    field(CALC, "A")
+    field(OUT,  "In9State PP")
+}
+ 
+record(calcout, "In9Evt9State") {
+    field(INPA, "In9Evt CP")
+    field(CALC, "A")
+    field(OUT,  "In9State PP")
+}
+
+# 出力パルス (boレコードでトリガ)
+record(bo, "Pulse10") {
+    field(DTYP, "stream")
+    field(OUT,  "@PProbe.proto pulseP10 L0")
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+}
+
+record(bo, "Pulse11") {
+    field(DTYP, "stream")
+    field(OUT,  "@PProbe.proto pulseP11 L0")
+    field(ZNAM, "ON")
+    field(ONAM, "OFF")
+}
+
+record(bo, "Pulse12") {
+    field(DTYP, "stream")
+    field(OUT,  "@PProbe.proto pulseP12 L0")
+    field(ZNAM, "ON")
+    field(ONAM, "OFF")
+}
+
+record(bo, "Pulse13") {
+    field(DTYP, "stream")
+    field(OUT,  "@PProbe.proto pulseP13 L0")
+    field(ZNAM, "ON")
+    field(ONAM, "OFF")
+}
+
+record(bo, "pulsePA") {
+    field(DTYP, "stream")
+    field(OUT,  "@PProbe.proto pulsePA L0")
+    field(ZNAM, "ON")
+    field(ONAM, "OFF")
+}
+
+record(bo, "pulsePB") {
+    field(DTYP, "stream")
+    field(OUT,  "@PProbe.proto pulsePB L0")
+    field(ZNAM, "ON")
+    field(ONAM, "OFF")
+}
+
+
